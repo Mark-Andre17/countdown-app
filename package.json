@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-preset-react-app": "^10.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.11",
+    "svg-to-ts": "^12.0.0",
     "typescript": "^4.9.5"
   },
   "scripts": {
@@ -15,7 +17,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint ./src --ext .ts,.tsx",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "generate-icons": "svg-to-ts"
   },
   "eslintConfig": {
     "extends": [
@@ -35,11 +38,16 @@
     ]
   },
   "devDependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.1.2",
+    "@mui/material": "^6.1.2",
     "@types/node": "^16.18.112",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.0",
     "@types/styled-components": "^5.1.34",
     "eslint-plugin-jsx-a11y": "^6.10.0",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "sass": "^1.79.4"
   }
 }
